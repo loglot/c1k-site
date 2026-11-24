@@ -1,8 +1,5 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Main Page"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
