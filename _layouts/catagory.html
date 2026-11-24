@@ -15,9 +15,9 @@
         justify-content: center;
       }
     </style>
-    {% include cardS.html %}
+    {% include cardS2.html %}
     <div class="flex">
-      {% for post in site.tags.{{ page.ltag }} %}
+      {% for post in site.tags.[page.ltag] %}
         {% include card.html %}
       {% endfor %}
     </div>
