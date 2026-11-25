@@ -1,6 +1,19 @@
-<div class="head"><h1 style="font-size: 60px; text-align: right; width:50%;top:0%;line-height: 0px;">c1k</h1>
-    <h1 style="font-size: 30px; text-align: left; width:50%;bottom:10%;line-height: 0px;left:calc(50% + 10px);position:absolute;">{{page.title}}</h1>
-     </div>
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+
+<div class="head">
+    <h1 class="h1">{{site.header}}</h1>
+    <h1 class="h2">{{page.title}}</h1>
+</div>
+
 <style>
     .head{
         position: relative;
@@ -11,6 +24,22 @@
         display: flex;
         /* height:60px; */
         padding:0%;
+    }
+    .head .h1{
+        font-size: 60px; 
+        text-align: right; 
+        width:50%;
+        top:0%;
+        line-height: 0px;
+    }
+    .head .h2{
+        font-size: 30px; 
+        text-align: left; 
+        width:50%;
+        bottom:10%;
+        line-height: 0px;
+        left:calc(50% + 10px);
+        position:absolute;
     }
     body{
         margin:0%
